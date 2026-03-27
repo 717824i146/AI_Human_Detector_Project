@@ -1,0 +1,94 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0; padding: 0;
+    display: flex; justify-content: center;
+    background: #0f1117; color: white;
+}
+
+.app-container {
+    width: 600px;
+    margin: 50px auto;
+    text-align: center;
+}
+
+h1 {
+    color: #00bfff;
+    margin-bottom: 20px;
+    animation: fadeIn 1s ease;
+}
+
+textarea {
+    width: 100%;
+    height: 150px;
+    border-radius: 10px;
+    border: none;
+    padding: 10px;
+    font-size: 16px;
+    background: #161b22;
+    color: white;
+    resize: none;
+    margin-top: 20px;
+    transition: background 0.3s;
+}
+
+button {
+    margin-top: 10px;
+    padding: 12px 25px;
+    font-size: 16px;
+    border-radius: 8px;
+    border: none;
+    background: #00bfff;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #009acd;
+    transform: scale(1.05);
+}
+
+#loader {
+    border: 6px solid #f3f3f3;
+    border-top: 6px solid #00bfff;
+    border-radius: 50%;
+    width: 50px; height: 50px;
+    margin: 20px auto;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+#confidenceContainer {
+    width: 100%;
+    height: 20px;
+    background: #30363d;
+    border-radius: 10px;
+    margin: 15px 0;
+    overflow: hidden;
+}
+
+#confidenceBar {
+    height: 100%;
+    width: 0%;
+    border-radius: 10px;
+    transition: width 0.8s ease, background 0.5s ease;
+}
+
+#resultBox {
+    margin-top: 20px;
+    padding: 20px;
+    background: #1f242d;
+    border-radius: 15px;
+    animation: fadeIn 0.8s ease;
+}
+
+.hidden { display: none; }
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-10px); }
+    to { opacity: 1; transform: translateY(0); }
+}

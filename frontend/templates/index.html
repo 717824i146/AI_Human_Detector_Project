@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>AI vs Human Detector</title>
+<link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+<div class="app-container">
+
+    <h1>🧠 AI vs Human Text Detector</h1>
+
+    <textarea id="inputText" placeholder="Type or paste your text here..."></textarea>
+    <button onclick="analyzeText()">Analyze</button>
+
+    <div id="loader" class="hidden"></div>
+
+    <div id="confidenceContainer" class="hidden">
+        <div id="confidenceBar"></div>
+    </div>
+
+    <div id="resultBox" class="hidden">
+        <p id="label"></p>
+        <p id="confidence"></p>
+        <p id="decision"></p>
+    </div>
+</div>
+
+<script src="/static/script.js"></script>
+</body>
+</html>
